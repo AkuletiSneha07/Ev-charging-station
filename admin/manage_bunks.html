@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manage EV Bunks</title>
+  <link rel="stylesheet" href="../assets/css/manage_bunks.css" />
+ 
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../assets/images/logo.png" alt="Logo">
+    </div>
+    <div class="nav-links">
+      <a href="adminhome.html">Dashboard</a>
+      <a href="../index.html">Logout</a>
+    </div>
+  </nav>
+
+  
+  <div class="form-container">
+    <h2>Manage Bunk Details</h2>
+    <div id="message" style="margin: 10px 0;"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Bunk Name</th>
+          <th>Location</th>
+          <th>Mobile</th>
+          <th>Map</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="bunkTableBody">
+       
+      </tbody>
+    </table>
+  </div>
+
+  
+  <div id="editFormModal" style="display:none; margin: 20px;" class="form-container">
+    <h3>Edit Bunk Details</h3>
+    <form id="editBunkForm">
+      <input type="hidden" id="editBunkId" />
+      <input type="text" id="editBunkName" placeholder="Bunk Name" required><br>
+      <input type="text" id="editLocation" placeholder="Location" required><br>
+      <input type="tel" id="editMobile" placeholder="Mobile Number"><br>
+      <input type="text" id="editMapLink" placeholder="Google Map URL"><br>
+      <button type="submit">Update</button>
+      <button type="button" onclick="cancelEdit()">Cancel</button>
+    </form>
+  </div>
+
+ 
+  <footer>
+    &copy; 2025 EV Recharge Bunk.
+  </footer>
+
+  
+  <script type="module" src="manage_bunks.js"></script>
+</body>
+</html>

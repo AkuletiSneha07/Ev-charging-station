@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Recharge Slots</title>
+  <link rel="stylesheet" href="../assets/css/create_slot.css">
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <div class="logo"><img src="../assets/images/logo.png" alt="Logo"></div>
+    <div class="nav-links">
+      <a href="adminhome.html">Dashboard</a>
+      <a href="../index.html">Logout</a>
+    </div>
+  </nav>
+
+  
+  <div class="form-container">
+    <h2>Create Recharge Slots</h2>
+    <div id="message"></div>
+
+    <form id="slotForm">
+      <input type="text" id="bunkName" placeholder="Bunk Name" required><br>
+      <input type="number" id="slotCount" placeholder="Number of Slots" min="1" required><br>
+      <div id="slotsContainer"></div>
+      <button type="submit">Create Slots</button>
+    </form>
+  </div>
+
+  
+  <footer>&copy; 2025 EV Recharge Bunk.</footer>
+
+  <script type="module" src="create_slots.js"></script>
+</body>
+</html>

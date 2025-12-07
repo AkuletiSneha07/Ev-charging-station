@@ -1,0 +1,95 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004466;
+  padding: 10px 20px;
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+
+.form-container {
+  background-color: #fff;
+  padding: 30px 40px;
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #004466;
+}
+
+#slotInfo {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #004466;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #00334d;
+}
+
+#message {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  color: #555;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

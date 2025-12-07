@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Slot</title>
+  <link rel="stylesheet" href="../assets/css/bookings.css" />
+</head>
+<body>
+
+  
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../assets/images/logo.png" alt="EV Logo" />
+    </div>
+    <div class="nav-links">
+      <a href="./home.html">back</a>
+      <a href="../index.html">Logout</a>
+    </div>
+  </nav>
+
+  
+  <div class="form-container">
+    <h2>Book Slot</h2>
+    <p id="slotInfo"></p>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Your Name" required /><br />
+      <input type="email" id="email" placeholder="Email" required /><br />
+      <input type="tel" id="mobile" placeholder="Mobile Number" required /><br />
+      <button type="submit">Confirm Booking</button>
+    </form>
+    <p id="message"></p>
+  </div>
+
+  <footer>&copy; 2025 EV Recharge Bunk. All rights reserved.</footer>
+
+  <script type="module" src="booking.js"></script>
+</body>
+</html>

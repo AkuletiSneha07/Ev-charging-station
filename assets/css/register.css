@@ -1,0 +1,110 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('../images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: navy;
+  padding: 10px 30px;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 50px auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.form-container form input,
+.form-container form select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-container form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffcc00;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.form-container form button:hover {
+  background-color: #e6b800;
+}
+
+
+footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 12px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+}
+
+#message {
+  font-size: 16px;
+  padding: 10px 0;
+  text-align: center;
+}

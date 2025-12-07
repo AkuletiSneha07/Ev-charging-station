@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Home - EV Recharge Bunk</title>
+  <link rel="stylesheet" href="../assets/css/userhome.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../assets/images/logo.png" alt="EV Logo">
+    </div>
+    <div class="nav-links">
+      
+      <a href="../index.html">Logout</a>
+    </div>
+  </nav>
+
+  
+  <div class="welcome">
+    <h2>Welcome to EV Recharge Bunk Portal</h2>
+    <p>Explore nearby EV charging stations and plan your trip.</p>
+  </div>
+
+  
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search by City Name..." />
+    <button onclick="filterBunks()">Search</button>
+  </div>
+
+  
+  <div class="bunk-list-container">
+    <h3>Available EV Bunks</h3>
+    <table id="bunkTable" border="1" width="100%">
+      <thead>
+        <tr>
+          <th>Bunk Name</th>
+          <th>Location</th>
+          <th>Mobile</th>
+          <th>Map</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="bunkTableBody">
+        
+      </tbody>
+    </table>
+  </div>
+
+  
+  <footer>
+    &copy; 2025 EV Recharge Bunk. All rights reserved.
+  </footer>
+
+  <script type="module" src="userhome.js"></script>
+</body>
+</html>

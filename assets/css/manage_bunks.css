@@ -1,0 +1,133 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+
+.navbar {
+  background-color: #003366;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.navbar .logo img {
+  height: 40px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+
+.form-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+h2, h3 {
+  text-align: center;
+  color: #003366;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #003366;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #003366;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+button:hover {
+  background-color: #0059b3;
+}
+
+
+#message {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+#editFormModal input {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#editFormModal button {
+  margin-top: 10px;
+}
+footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 12px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+}
+
+ .action-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .action-buttons button {
+      padding: 5px 10px;
+      border: none;
+      background-color: #0078d7;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .action-buttons button:hover {
+      background-color: #005bb5;
+    }
+ 

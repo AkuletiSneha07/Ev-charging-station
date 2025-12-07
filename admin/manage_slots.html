@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Recharge Slots</title>
+  <link rel="stylesheet" href="../assets/css/manage_slots.css" />
+</head>
+<body>
+
+  
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../assets/images/logo.png" alt="EV Logo" />
+    </div>
+    <div class="nav-links">
+      <a href="adminhome.html">Dashboard</a>
+      <a href="../index.html">Logout</a>
+    </div>
+  </nav>
+
+  
+  <div class="form-container">
+    <h2>Manage Recharge Slots</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Bunk Name</th>
+          <th>Total Slots</th>
+          <th>Slot Timings</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="slotTableBody">
+        
+      </tbody>
+    </table>
+
+    <!-- Edit Form -->
+    <div id="editForm" style="display: none; margin-top: 20px;">
+      <h3>Edit Slot</h3>
+      <form id="editSlotForm">
+        <input type="hidden" id="editSlotId" />
+        <label>Bunk Name:</label><br>
+        <input type="text" id="editBunkName" required><br><br>
+
+        <label>Slot Timings (comma-separated):</label><br>
+        <input type="text" id="editSlotTimings" required><br><br>
+
+        <button type="submit">Update</button>
+        <button type="button" onclick="cancelEdit()">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  
+  <footer>
+    &copy; 2025 EV Recharge Bunk.
+  </footer>
+
+  
+  <script type="module" src="manage_slots.js"></script>
+</body>
+</html>
